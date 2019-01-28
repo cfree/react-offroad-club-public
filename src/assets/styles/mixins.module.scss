@@ -1,0 +1,37 @@
+@import '../../../assets/styles/variables.module.scss';
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin alignright {
+  clear: both;
+  display: block;
+  margin: 0 auto 1.5em;
+
+  @media (min-width: $bp-sm) {
+    clear: none;
+    display: inline;
+    float: right;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+  }
+}
+
+@mixin alignleft {
+  clear: both;
+  display: block;
+  margin: 0 auto 1.5em;
+
+  @media (min-width: $bp-sm) {
+    clear: none;
+    display: inline;
+    float: left;
+    margin-bottom: 0;
+    margin-right: 1.5em;
+  }
+}

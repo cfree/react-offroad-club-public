@@ -1,0 +1,6 @@
+@import '../mixins.module.scss';
+
+.logo {
+  @include alignleft;
+  border-radius: 5px;
+}
