@@ -24,10 +24,10 @@ const Menu = ({ siteTitle }) => (
         </h1>
       </li>
       <li>
-        <Link to="/join">Join Us</Link>
+        <Link to="/join">Membership</Link>
       </li>
       <li>
-        <a href={membershipUrl}>Members</a>
+        <Link to="/news">News</Link>
       </li>
       <li>
         <Link to="/contact">Contact Us</Link>

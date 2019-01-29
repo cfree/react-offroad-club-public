@@ -1,29 +1,19 @@
 @import '../../../assets/styles/variables.module.scss';
 
 .Main {
-  margin: 1.5em auto 2.5em;
-
-  @media (min-width: $bp-md) {
-    margin: 2.5em auto 4.5em;
-  }
+  padding: 50px 0;
+  font-family: $font-default;
 
   // Content
-  p,
-  input,
-  select,
-  textarea {
+  p {
     color: $color-gray;
     font-size: 1.6rem;
-    line-height: 1.2;
+    line-height: 1.6;
+    margin: 0 0 1.5em;
 
     @media (min-width: $bp-md) {
       font-size: 2rem;
     }
-  }
-
-  p {
-    line-height: 1.6;
-    margin: 0 0 1.5em;
   }
 
   h1,
@@ -32,6 +22,7 @@
   h4,
   h5,
   h6 {
+    font-family: $font-default;
     line-height: 1.2;
     margin: 0.5em 0;
     clear: both;
@@ -222,5 +213,17 @@
   em,
   i {
     font-style: italic;
+  }
+
+  hr {
+    background: url(../../../assets/images/lines-gray.png) left bottom repeat-x;
+    height: 3px;
+    margin-bottom: 1.5em;
+    clear: both;
+    border: 0;
+    box-sizing: content-box;
+    overflow: visible;
+    margin: 40px 0;
+    padding: 0;
   }
 }

@@ -10,20 +10,43 @@ const JoinPage = () => (
     <SEO title="Page two" />
 
     <Main>
-      <h2>Want to Become a Member?</h2>
+      <h2>How to Get Involved</h2>
+      <p>
+        <strong>I have a rig</strong>. Great! Check out the{' '}
+        <a href="#full-membership">requirements for Full membership</a> below.
+      </p>
+      <p>
+        <strong>I don't have a 4WD vehicle</strong>. No problem! We offer an
+        Associate membership for those who don't have access to a 4WD vehicle or
+        cannot otherwise meet membership requirements. Read the{' '}
+        <a href="#associate-membership">related section</a> below for details.
+      </p>
+      <p>
+        <strong>I'm not sure if I want to join</strong>. Guests are welcome!
+        Join us for up to 3 runs before we ask that you apply for membership.{' '}
+        <a href="https://members.4-playersofcolorado.org/register">
+          Create an account
+        </a>{' '}to get started.
+      </p>
 
-      <p>Requirements:</p>
+      <h3 id="full-membership">Requirements for Full Membership</h3>
       <ul>
         <li>
-          Own or have access to a 4×4-capable vehicle with current license, registration, and
-          insurance coverage.
+          Own or have access to a 4×4-capable vehicle with current license,
+          registration, and insurance coverage.
         </li>
         <li>Identify as a gay man.</li>
         <li>Have a desire to explore off-road trails.</li>
+        <li>Be 18 years of age or older.</li>
       </ul>
-      <p>Process:</p>
+      <h4>Process</h4>
       <ol>
-        <li>Register for a Guest Account on this website.</li>
+        <li>
+          <a href="https://members.4-playersofcolorado.org/register">
+            Register for an account
+          </a>
+          .
+        </li>
         <li>
           Sign-up and drive your rig on one or more of our published runs.
         </li>
@@ -32,19 +55,17 @@ const JoinPage = () => (
           of the month at 7pm.
         </li>
         <li>
-          Upon completion of Steps 1-3, the General Membership will vote to
+          Upon completion of steps 1-3, the General Membership will vote to
           consider your application (you must be present at the meeting).
         </li>
         <li>
-          Upon completion of Steps 1-3, the General Membership will vote to
-          consider your application (you must be present at the meeting). Once
-          the General Membership grants you Full Member status, pay the $20
+          Once the General Membership grants you Full Member status, pay the $20
           yearly dues and submit a ‘Rigbook’ photo of you and your rig.
         </li>
       </ol>
       <p>Note: Steps #2 and #3 can be done in any order.</p>
 
-      <p>Expectations</p>
+      <h4>Expectations</h4>
       <ul>
         <li>Participate in all fundraising activities. </li>
         <li>
@@ -54,7 +75,7 @@ const JoinPage = () => (
         <li>Have Fun!</li>
       </ul>
 
-      <p>Benefits</p>
+      <h4>Benefits</h4>
       <ul>
         <li>
           Members receive 10-15% off items purchased at 4WD.com and
@@ -71,7 +92,52 @@ const JoinPage = () => (
         </li>
       </ul>
 
-      {/* Sign Up Form */}
+      <h3 id="associate-membership">Requirements for Associate Membership</h3>
+
+      <ul>
+        <li>Have a desire to explore off-road trails.</li>
+        <li>Be 18 years of age or older.</li>
+      </ul>
+
+      <h4>Process</h4>
+      <ol>
+        <li>
+          <a href="https://members.4-playersofcolorado.org/register">
+            Register for an account
+          </a>
+          .
+        </li>
+        <li>
+          Attend one or more of our monthly meetings, held on the second Monday
+          of the month at 7pm.
+        </li>
+        <li>
+          Upon completion of the first two steps, the General Membership will
+          vote to consider your application (you must be present at the
+          meeting).
+        </li>
+      </ol>
+
+      <h4>Expectations</h4>
+      <ul>
+        <li>
+          Learn from, or provide help to, other members on how to be safe on the
+          trails and good stewards of our environment.
+        </li>
+        <li>Have Fun!</li>
+      </ul>
+
+      <h4>Benefits</h4>
+      <ul>
+        <li>
+          Access to our website with galleries, past run reports, and
+          newsletters.
+        </li>
+        <li>
+          Belonging to a club with 30+ years of history, stories and active
+          participation in our community.
+        </li>
+      </ul>
 
       <hr />
 

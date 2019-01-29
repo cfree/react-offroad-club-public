@@ -4,15 +4,17 @@ import classnames from 'classnames';
 
 import styles from './Gallery.module.scss';
 import Container from '../../utility/Container';
+import Button from '../../utility/Button';
 
 const Gallery = () => (
   <div className={styles.Gallery}>
     <Container>
-      <ul>
+      <ul className={styles.list}>
         <li>Photo 1</li>
         <li>Photo 2</li>
         <li>Photo 3</li>
       </ul>
+      <Button ghost={true}>Visit Instagram</Button>
     </Container>
   </div>
 );

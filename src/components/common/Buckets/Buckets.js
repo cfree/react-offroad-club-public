@@ -8,7 +8,7 @@ import Container from '../../utility/Container';
 const Buckets = () => (
   <div className={styles.Buckets}>
     <Container>
-      <ul>
+      <ul className={styles.list}>
         <li>Bucket 1</li>
         <li>Bucket 2</li>
         <li>Bucket 3</li>

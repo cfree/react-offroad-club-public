@@ -3,7 +3,7 @@
 :global {
   html {
     box-sizing: border-box;
-    font-family: $font-secondary;
+    font-family: $font-default;
     /* Root for rems
       62.5% takes 16px (browser default size for medium text) down to 10px
       ref: http://clagnut.com/blog/348/ */

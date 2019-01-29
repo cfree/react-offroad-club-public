@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import { navigate } from 'gatsby';
 
 import styles from './Header.module.scss';
 import Menu from '../Menu';
 import Container from '../../utility/Container';
+import Button from '../../utility/Button';
 
 const Header = ({ pageTitle, siteTitle, small }) => (
   <header
@@ -20,7 +21,7 @@ const Header = ({ pageTitle, siteTitle, small }) => (
         <div className={styles.hero}>
           <h2 className={styles.tagline}>Where Dirty Boys Go To Get Dirtier</h2>
           <h3 className={styles.sinceline}>Getting Dirty Since 1986</h3>
-          <button>Become a Member</button>
+          <Button handleClick={() => navigate('/join')}>Get Started</Button>
         </div>
       )}
     </Container>

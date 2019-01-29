@@ -4,8 +4,12 @@ import classnames from 'classnames';
 
 import styles from './container.module.scss';
 
-const Container = ({ small = false, children }) => {
-  const classes = classnames(small ? styles.containerSmall : styles.container);
+const Container = ({ small = false, children, className = '' }) => {
+  const classes = classnames({
+    [styles.containerSmall]: small,
+    [styles.container]: !small,
+    [className]: true,
+  });
 
   return <div className={classes}>{children}</div>;
 };

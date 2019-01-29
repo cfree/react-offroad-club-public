@@ -108,10 +108,11 @@ const RunInfoPage = () => (
         <div className="col2">
           <h4>Equipment</h4>
           <p>
-            Radios: We use two-way radios like the{' '}
+            <strong>Radios</strong>: We use two-way radios like the{' '}
             <a
               target="_blank"
               href="https://midlandusa.com/product/gxt1000vp4/"
+              rel="noopener noreferrer"
             >
               Midland GXT100VP4
             </a>{' '}
@@ -119,13 +120,14 @@ const RunInfoPage = () => (
             have CBs in their rigs, but that number is increasing.)
           </p>
           <p>
-            Repair Kit: Know what tools you’ll need for your rig to do basic
-            trail repairs if you breakdown or get damaged. It takes time to
-            build up these kits. Think ahead how you can fix a flat, tie up a
-            loose/broken part, or ways to limp off the trail to a repair shop.
+            <strong>Repair Kit</strong>: Know what tools you’ll need for your
+            rig to do basic trail repairs if you breakdown or get damaged. It
+            takes time to build up these kits. Think ahead how you can fix a
+            flat, tie up a loose/broken part, or ways to limp off the trail to a
+            repair shop.
           </p>
           <p>
-            Emergency Kit: Include things like extra food, water, shelter,
+            <strong>Emergency Kit</strong>: Include things like extra food, water, shelter,
             fire/warmth, maps, etc. It takes time to build up these kits. Think
             ahead how you’ll handle a late-into-the-night repair with yet 20
             miles of off-road before reaching pavement.
@@ -142,16 +144,21 @@ const RunInfoPage = () => (
       <p>
         <strong>No 4x4 Vehicle?</strong> That's okay! Our members commonly have
         space for ride-alongs and it’s a great way to be immersed in nature and
-        meet some of the guys in the club. Sign-up for a Guest account below.
+        meet some of the guys in the club.{' '}
+        <a href="https://members.4-playersofcolorado.org/register">
+          Sign-up for an account
+        </a>
+        .
       </p>
       <p>
-        <strong>Have a Rig?</strong> Let's go! Our Run Leaders are
-        experienced off-roaders. It’s safer to hit the trails with a group. Pack
-        a lunch and/or your dog and let’s get out there. Sign up for a Guest
-        account below.
+        <strong>Have a Rig?</strong> Let's go! Our Run Leaders are experienced
+        off-roaders. It’s safer to hit the trails with a group. Pack a lunch
+        and/or your dog and let’s get out there.{' '}
+        <a href="https://members.4-playersofcolorado.org/register">
+          Create an account
+        </a>{' '}
+        to get started.
       </p>
-
-      {/* <SignUp/> */}
 
       <hr />
       <p>

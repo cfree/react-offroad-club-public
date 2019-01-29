@@ -5,7 +5,7 @@ import styles from './Main.module.scss';
 import Container from '../../utility/Container';
 
 const Main = ({ children }) => (
-  <main className={styles.main}>
+  <main className={styles.Main}>
     <Container small={true}>{children}</Container>
   </main>
 );

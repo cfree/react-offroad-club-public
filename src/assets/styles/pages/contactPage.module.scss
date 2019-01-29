@@ -1,0 +1,7 @@
+@import '../mixins.module.scss';
+
+.cols {
+  display: grid;
+  grid-column-gap: $space;
+  grid-template-columns: 1fr 1fr;
+}

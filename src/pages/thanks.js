@@ -5,16 +5,15 @@ import Layout from '../components/layout/Layout';
 import SEO from '../components/common/Seo';
 import Main from '../components/layout/Main';
 
-const NewsPage = () => (
-  <Layout showSmallHeader={true} pageTitle="News">
-    <SEO title="News" />
+const ThanksPage = () => (
+  <Layout showSmallHeader={true} pageTitle="Thank You">
+    <SEO title="Thank you for your message" />
 
     <Main>
-      <h2>What's Happening?</h2>
-
-      Articles coming soon&hellip;
+      <h2>Thanks For Your Message</h2>
+      Someone will get back to you shortly.
     </Main>
   </Layout>
 );
 
-export default NewsPage;
+export default ThanksPage;

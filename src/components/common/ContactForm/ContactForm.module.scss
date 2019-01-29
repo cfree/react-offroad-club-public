@@ -1,1 +1,31 @@
-.ContactForm {}
+@import '../../../assets/styles/variables.module.scss';
+
+.ContactForm {
+  margin-top: -$space;
+}
+
+.formFields {
+  margin-bottom: $space;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  margin-top: $space;
+  padding: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid $color-gray-light;
+}
+
+.error {
+  color: $color-primary;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 4px 0 0 4px;
+}
+
+.btn {
+  margin-top: $space;
+}
