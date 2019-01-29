@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import styles from './container.module.scss';
+import styles from './Container.module.scss';
 
 const Container = ({ small = false, children, className = '' }) => {
   const classes = classnames({
