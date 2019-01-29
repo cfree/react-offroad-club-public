@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import styles from './Menu.module.scss';
-import { shortSiteTitle, membershipUrl } from '../../../config';
+// import { shortSiteTitle, membershipUrl } from '../../../config';
 
 const Menu = ({ siteTitle }) => (
   <nav className={styles.Menu}>

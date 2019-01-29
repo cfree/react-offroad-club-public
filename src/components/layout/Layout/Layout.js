@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../Header';
 import Footer from '../Footer';
-import styles from './Layout.module.scss';
+// import styles from './Layout.module.scss';
 
 const Layout = ({ showSmallHeader, pageTitle, children }) => (
   <StaticQuery

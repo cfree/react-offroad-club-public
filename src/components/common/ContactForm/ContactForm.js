@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+// import classnames from 'classnames';
 import { Formik, Field, ErrorMessage } from 'formik';
 import { navigate } from 'gatsby';
 
 import styles from './ContactForm.module.scss';
-import Container from '../../utility/Container';
 import Button from '../../utility/Button';
 
 class ContactForm extends Component {

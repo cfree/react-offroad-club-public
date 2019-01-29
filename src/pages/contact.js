@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import styles from '../assets/styles/pages/contactPage.module.scss'
 import Layout from '../components/layout/Layout';

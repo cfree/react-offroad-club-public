@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import styles from '../assets/styles/pages/indexPage.module.scss';
 import Layout from '../components/layout/Layout';
@@ -10,7 +9,7 @@ import Intro from '../components/common/Intro';
 import LatestEvents from '../components/common/LatestEvents';
 import Buckets from '../components/common/Buckets';
 import Gallery from '../components/common/Gallery';
-import LatestNews from '../components/common/LatestNews';
+// import LatestNews from '../components/common/LatestNews';
 import { fullSiteTitle } from '../config';
 
 const IndexPage = () => (
