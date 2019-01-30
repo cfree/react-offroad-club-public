@@ -5,8 +5,8 @@
  */
 
 // You can delete this file if you're not using it
-// const path = require(`path`);
-// const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // exports.createPages = ({ graphql, actions }) => {
 //   const { createPage } = actions;

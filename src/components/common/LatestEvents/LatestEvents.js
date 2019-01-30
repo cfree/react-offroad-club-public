@@ -5,21 +5,40 @@ import PropTypes from 'prop-types';
 import styles from './LatestEvents.module.scss';
 import Container from '../../utility/Container';
 import Button from '../../utility/Button';
+import { StaticQuery, graphql } from 'gatsby';
 
 class LatestEvents extends Component {
   render() {
     return (
-      <div className={styles.LatestEvents}>
-        <Container>
-          <ul className={styles.list}>
-            <li>Event 1</li>
-            <li>Event 2</li>
-            <li>Event 3</li>
-          </ul>
-
-          <Button ghost={true} handleClick={() => {}}>See all events</Button>
-        </Container>
-      </div>
+      <StaticQuery
+        query={
+          graphql`
+            query {
+              allIcal(sort: { fields: start, order: ASC }, filter: { start: { regex: "/2019-/" } }) {
+                edges {
+                  node {
+                    start
+                    end
+                    summary
+                  }
+                }
+              }
+            }
+          `} 
+        render={({ allIcal }) => {
+          return <div className={styles.LatestEvents}>
+              <Container>
+                <ul className={styles.list}>
+                  {allIcal.edges.map((edge, index) => <li key={index}>{edge.node.summary}</li>)}
+                </ul>
+                {/* <Button className={styles.btn} ghost={true} handleClick={() => {}}>
+                  See all events
+                </Button> */}
+              </Container>
+            </div>;
+          }
+        } 
+      />
     );
   }
 }

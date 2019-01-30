@@ -136,8 +136,7 @@ const RunInfoPage = () => (
       </div>
       <h3>Where We Meet Up</h3>
       <p>
-        Each run will designate a meet-up location and time. The following maps
-        provide specific location details for each of our Rally spots.
+        Each run will designate a meet-up location and time.
       </p>
 
       <h3>Want to Come Along?</h3>

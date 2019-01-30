@@ -2,7 +2,12 @@
 @import '../../../assets/styles/mixins.module.scss';
 
 .Gallery {
-  @include darkSection;
+  @include darkSection('../../../../content/assets/tracks.jpg');
+}
+
+.galleryWrapper {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .list {
@@ -16,5 +21,13 @@
   li {
     background: $color-light;
     padding: $space;
+  }
+}
+
+:global {
+  .slider-control-bottomcenter {
+    @media (max-width: $bp-lg) {
+      display: none;
+    }
   }
 }
