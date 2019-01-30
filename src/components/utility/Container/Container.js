@@ -15,7 +15,7 @@ const Container = ({ small = false, children, className = '' }) => {
 };
 
 Container.propTypes = {
-  small: PropTypes.string,
+  small: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 

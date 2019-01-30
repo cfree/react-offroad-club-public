@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 // import classnames from 'classnames';
 import { Formik, Field, ErrorMessage } from 'formik';
 import { navigate } from 'gatsby';
@@ -81,10 +80,5 @@ class ContactForm extends Component {
       </div>;
   }
 }
-
-ContactForm.propTypes = {
-  small: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default ContactForm;

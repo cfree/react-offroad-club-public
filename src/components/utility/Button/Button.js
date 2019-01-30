@@ -4,11 +4,14 @@ import classnames from 'classnames';
 
 import styles from './Button.module.scss';
 
-const Button = ({ handleClick, children, ghost }) => {
-  const classes = classnames({
-    [styles.Button]: !ghost,
-    [styles.ButtonGhost]: ghost,
-  });
+const Button = ({ handleClick, children, ghost, className = '' }) => {
+  const classes = classnames(
+    className, 
+    {
+      [styles.Button]: !ghost,
+      [styles.ButtonGhost]: ghost,
+    },
+  );
   
   return (
     <button onClick={handleClick} className={classes}>

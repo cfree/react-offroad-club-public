@@ -1,51 +1,63 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-// import classnames from 'classnames';
+import { StaticQuery, graphql } from 'gatsby';
 
 import styles from './LatestEvents.module.scss';
 import Container from '../../utility/Container';
-import Button from '../../utility/Button';
-import { StaticQuery, graphql } from 'gatsby';
+import Calendar from '../../common/Calendar';
+
 
 class LatestEvents extends Component {
   render() {
     return (
-      <StaticQuery
-        query={
-          graphql`
-            query {
-              allIcal(sort: { fields: start, order: ASC }, filter: { start: { regex: "/2019-/" } }) {
-                edges {
-                  node {
-                    start
-                    end
-                    summary
+      <div className={styles.LatestEvents}>
+        <Container>
+          <h2 className={styles.heading}>Upcoming Events</h2>
+          <StaticQuery
+            query={
+              graphql`
+                query {
+                  allIcal(
+                    sort: {
+                      fields: start,
+                      order: ASC
+                    },
+                    filter: {
+                      start: { regex: "/2019-/" } 
+                    }
+                  ) {
+                    edges {
+                      node {
+                        start
+                        summary
+                      }
+                    }
                   }
                 }
+              `} 
+            render={
+              ({ allIcal }) => {
+                const today = new Date();
+                const upcomingEvents = allIcal.edges
+                  .filter(edge => (new Date(edge.node.start)) >= today)
+                  .splice(0, 3);
+
+                return (
+                  <ul className={styles.list}>
+                    {upcomingEvents.map((edge, index) => (
+                      <li className={styles.listItem} key={index}>
+                        <Calendar date={edge.node.start} />
+                        <h4 className={styles.eventHeading}>{edge.node.summary}</h4>
+                      </li>
+                    ))}
+                  </ul>
+                );
               }
-            }
-          `} 
-        render={({ allIcal }) => {
-          return <div className={styles.LatestEvents}>
-              <Container>
-                <ul className={styles.list}>
-                  {allIcal.edges.map((edge, index) => <li key={index}>{edge.node.summary}</li>)}
-                </ul>
-                {/* <Button className={styles.btn} ghost={true} handleClick={() => {}}>
-                  See all events
-                </Button> */}
-              </Container>
-            </div>;
-          }
-        } 
-      />
+            } 
+          />
+        </Container>
+      </div>
     );
   }
 }
-
-LatestEvents.propTypes = {
-  small: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default LatestEvents;

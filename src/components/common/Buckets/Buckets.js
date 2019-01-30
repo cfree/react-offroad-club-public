@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-// import classnames from 'classnames';
 
 import styles from './Buckets.module.scss';
 import Container from '../../utility/Container';
@@ -8,18 +6,28 @@ import Container from '../../utility/Container';
 const Buckets = () => (
   <div className={styles.Buckets}>
     <Container>
+      <h2>For Over 30 years, Our Mission Hasn't Changed</h2>
       <ul className={styles.list}>
-        <li>Bucket 1</li>
-        <li>Bucket 2</li>
-        <li>Bucket 3</li>
+        <li>
+          <strong>Sport</strong>
+          <br />
+          Promote the safe and responsible pursuit of the sport of
+          four-wheeling.
+        </li>
+        <li>
+          <strong>Environment</strong>
+          <br />
+          Foster a respect for and commitment to preserving the environment.
+        </li>
+        <li>
+          <strong>Brotherhood</strong>
+          <br />
+          Provide social, educational, and recreational activities for our out
+          and proud members.
+        </li>
       </ul>
     </Container>
   </div>
 );
-
-Buckets.propTypes = {
-  small: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default Buckets;

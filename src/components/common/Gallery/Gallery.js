@@ -1,13 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-// import classnames from 'classnames';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Carousel from 'nuka-carousel';
 
 import styles from './Gallery.module.scss';
 import Container from '../../utility/Container';
-import Button from '../../utility/Button';
 
 const Gallery = () => (
   <div className={styles.Gallery}>
@@ -47,10 +44,5 @@ const Gallery = () => (
     </Container>
   </div>
 );
-
-Gallery.propTypes = {
-  small: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default Gallery;

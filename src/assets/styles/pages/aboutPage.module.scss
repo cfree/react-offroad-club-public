@@ -1,9 +1,5 @@
 @import '../mixins.module.scss';
 
-.recentImg {
-  margin-bottom: $space + 10;
-}
-
 .oldImg {
   @include alignright;
 }

@@ -24,10 +24,10 @@ const Menu = ({ siteTitle }) => (
         </h1>
       </li>
       <li>
-        <Link to="/join">Membership</Link>
+        <Link to="/membership">Membership</Link>
       </li>
       <li>
-        <Link to="/news">News</Link>
+        <a href="https://members.4-playersofcolorado.org">Login</a>
       </li>
       <li>
         <Link to="/contact">Contact Us</Link>

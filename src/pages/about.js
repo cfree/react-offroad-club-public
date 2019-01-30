@@ -14,20 +14,7 @@ const AboutPage = () => (
 
     <Main>
       <h2>Meet the 4-Players of Colorado</h2>
-      <img className={styles.recentImg} src={memberImgRecent} alt="2018 4-Players" />
-      <p>For over 30 years, our mission hasn’t changed:</p>
-      <ul>
-        <li>
-          Promote the safe and responsible pursuit of the sport of four-wheeling.
-        </li>
-        <li>
-          Foster a respect for and commitment to preserving the environment.
-        </li>
-        <li>
-          Provide social, educational, and recreational activities for our out
-          and proud members.
-        </li>
-      </ul>
+      <img src={memberImgRecent} alt="2018 4-Players" />
 
       <h3>What are We About?</h3>
       <h4>Exploring Trails</h4>

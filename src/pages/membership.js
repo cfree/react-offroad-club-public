@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import styles from '../assets/styles/pages/membershipPage.module.scss';
 import Layout from '../components/layout/Layout';
 import SEO from '../components/common/Seo';
 import Main from '../components/layout/Main';
+import Button from '../components/utility/Button';
 
-const JoinPage = () => (
-  <Layout showSmallHeader={true} pageTitle="Join Us">
-    <SEO title="Page two" />
+const MembershipPage = () => (
+  <Layout showSmallHeader={true} pageTitle="Membership">
+    <SEO title="Membership Information" />
 
     <Main>
       <h2>How to Get Involved</h2>
@@ -26,7 +28,8 @@ const JoinPage = () => (
         Join us for up to 3 runs before we ask that you apply for membership.{' '}
         <a href="https://members.4-playersofcolorado.org/register">
           Create an account
-        </a>{' '}to get started.
+        </a>{' '}
+        to get started.
       </p>
 
       <h3 id="full-membership">Requirements for Full Membership</h3>
@@ -141,6 +144,10 @@ const JoinPage = () => (
 
       <hr />
 
+      <Button className={styles.createBtn}>Create an Account</Button>
+
+      <hr />
+
       <p>
         If you have any questions, please feel free to{' '}
         <Link to="/contact">contact us</Link> for more information.
@@ -149,4 +156,4 @@ const JoinPage = () => (
   </Layout>
 );
 
-export default JoinPage;
+export default MembershipPage;
