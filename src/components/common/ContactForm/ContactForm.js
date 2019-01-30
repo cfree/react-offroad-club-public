@@ -71,7 +71,7 @@ class ContactForm extends Component {
 
               {/* reCaptcha */}
             </div>
-            <Button className={styles.btn} type="submit" disabled={isSubmitting}>
+            <Button type="submit" disabled={isSubmitting}>
               Send
             </Button>
           </form>

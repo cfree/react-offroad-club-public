@@ -144,7 +144,11 @@ const MembershipPage = () => (
 
       <hr />
 
-      <Button className={styles.createBtn}>Create an Account</Button>
+      <div className={styles.createBtn}>
+        <Button href="https://members.4-playersofcolorado.org/register">
+          Create an Account
+        </Button>
+      </div>
 
       <hr />
 

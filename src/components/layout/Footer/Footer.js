@@ -11,13 +11,15 @@ import logoSrc from '../../../assets/images/icon.png';
 const Footer = ({ siteTitle }) => (
   <footer className={styles.Footer}>
     <Location>
-      {({ navigate, location }) => (
+      {({ navigate, location }) =>
         location.pathname !== '/membership' && (
           <div className={styles.pageCap}>
-            <Button handleClick={() => navigate('/join')}>Get Started</Button>
+            <Button handleClick={() => navigate('/membership')}>
+              Get Started
+            </Button>
           </div>
         )
-      )}
+      }
     </Location>
     <Container className={styles.info}>
       <Link to="/">

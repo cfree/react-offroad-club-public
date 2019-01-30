@@ -4,31 +4,36 @@ import classnames from 'classnames';
 
 import styles from './Button.module.scss';
 
-const Button = ({ handleClick, children, ghost, className = '' }) => {
+const Button = ({ handleClick, children, ghost, className, href }) => {
   const classes = classnames(
-    className, 
+    className,
     {
       [styles.Button]: !ghost,
       [styles.ButtonGhost]: ghost,
     },
   );
+
+  const btnComponent = href
+    ? <a href={href} className={classes}>{children}</a>
+    : <button onClick={handleClick} className={classes}>{children}</button>
+
   
-  return (
-    <button onClick={handleClick} className={classes}>
-      {children}
-    </button>
-  );
+  return btnComponent;
 };
 
 Button.propTypes = {
   handleClick: PropTypes.func,
-  ghost: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  ghost: PropTypes.bool,
+  className: PropTypes.string,
+  href: PropTypes.string,
 };
 
 Button.defaultProps = {
+  handleClick: () => { },
   ghost: false,
-  handleClick: () => {},
+  className: '',
+  href: '',
 }
 
 export default Button;

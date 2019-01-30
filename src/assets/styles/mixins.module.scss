@@ -41,8 +41,8 @@
 }
 
 @mixin aligncenter {
+	display: block;
   clear: both;
-  display: block;
   margin: 0 auto 1.5em;
 }
 
