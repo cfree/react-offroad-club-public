@@ -16,7 +16,7 @@ const AboutPage = () => (
       <h2>Meet the 4-Players of Colorado</h2>
       <img src={memberImgRecent} alt="2018 4-Players" />
 
-      <h3>What are We About?</h3>
+      <h3>What Are We About?</h3>
       <h4>Exploring Trails</h4>
       <p>
         Each spring, we select trails throughout Colorado to explore. We choose
