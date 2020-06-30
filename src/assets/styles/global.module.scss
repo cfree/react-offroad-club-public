@@ -16,7 +16,9 @@
     }
   }
 
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     box-sizing: inherit;
   }
 
@@ -40,7 +42,7 @@
       font-size: 2rem;
     }
   }
-  
+
   a {
     text-decoration: none;
     color: $color-primary;
@@ -64,12 +66,12 @@
     position: fixed;
     top: 0;
     width: 100%;
-  
+
     @media (min-width: $bp-md) {
       background-position: center;
       padding-top: $content-vertical-padding;
     }
-  
+
     &:before {
       background: $color-secondary;
       content: '';

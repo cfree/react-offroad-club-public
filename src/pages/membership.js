@@ -26,7 +26,7 @@ const MembershipPage = () => (
       <p>
         <strong>I'm not sure if I want to join</strong>. Guests are welcome!
         Join us for up to 3 runs before we ask that you apply for membership.{' '}
-        <a href="https://members.4-playersofcolorado.org/register">
+        <a href="https://members.4-playersofcolorado.org/registration">
           Create an account
         </a>{' '}
         to get started.
@@ -45,7 +45,7 @@ const MembershipPage = () => (
       <h4>Process</h4>
       <ol>
         <li>
-          <a href="https://members.4-playersofcolorado.org/register">
+          <a href="https://members.4-playersofcolorado.org/registration">
             Register for an account
           </a>
           .
@@ -105,7 +105,7 @@ const MembershipPage = () => (
       <h4>Process</h4>
       <ol>
         <li>
-          <a href="https://members.4-playersofcolorado.org/register">
+          <a href="https://members.4-playersofcolorado.org/registration">
             Register for an account
           </a>
           .
@@ -145,7 +145,7 @@ const MembershipPage = () => (
       <hr />
 
       <div className={styles.createBtn}>
-        <Button href="https://members.4-playersofcolorado.org/register">
+        <Button href="https://members.4-playersofcolorado.org/registration">
           Create an Account
         </Button>
       </div>
