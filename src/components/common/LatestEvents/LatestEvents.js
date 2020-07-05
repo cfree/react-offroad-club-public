@@ -8,6 +8,8 @@ import Calendar from '../../common/Calendar';
 
 class LatestEvents extends Component {
   render() {
+    const year = new Date().getFullYear();
+
     return (
       <div className={styles.LatestEvents}>
         <Container>
@@ -22,7 +24,7 @@ class LatestEvents extends Component {
                       order: ASC
                     },
                     filter: {
-                      start: { regex: "/2019-/" } 
+                      start: { regex: `/${year}-/` } 
                     }
                   ) {
                     edges {
