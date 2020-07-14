@@ -21,7 +21,9 @@ const Header = ({ pageTitle, siteTitle, small }) => (
         <div className={styles.hero}>
           <h2 className={styles.tagline}>Where Dirty Boys Go To Get Dirtier</h2>
           <h3 className={styles.sinceline}>Getting Dirty Since 1986</h3>
-          <Button handleClick={() => navigate('/join')}>Get Started</Button>
+          <Button handleClick={() => navigate('/membership')}>
+            Get Started
+          </Button>
         </div>
       )}
     </Container>
