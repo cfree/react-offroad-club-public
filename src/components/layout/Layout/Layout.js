@@ -18,7 +18,7 @@ const Layout = ({ showSmallHeader, pageTitle, children }) => (
       }
     `}
     render={data => (
-      <>
+      <div>
         <Header
           pageTitle={pageTitle}
           siteTitle={data.site.siteMetadata.title}
@@ -26,7 +26,7 @@ const Layout = ({ showSmallHeader, pageTitle, children }) => (
         />
         {children}
         <Footer siteTitle={data.site.siteMetadata.title} />
-      </>
+      </div>
     )}
   />
 );
@@ -40,6 +40,6 @@ Layout.propTypes = {
 Layout.defaultProps = {
   pageTitle: '',
   showSmallHeader: false,
-}
+};
 
 export default Layout;

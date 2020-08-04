@@ -6,18 +6,26 @@
 }
 
 .list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: $space;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include breakpoint($bp-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $space;
+  }
 }
 
 .listItem {
   // background: $color-light;
   // padding: $space;
   display: flex;
+  margin: 10px 0;
+
+  @include breakpoint($bp-md) {
+    display: flex;
+  }
 }
 
 .btn {

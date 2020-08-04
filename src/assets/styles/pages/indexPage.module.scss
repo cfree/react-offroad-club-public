@@ -3,4 +3,8 @@
 .logo {
   @include alignleft;
   border-radius: 5px;
+
+  @include breakpoint($bp-md) {
+    padding: 50px 0;
+  }
 }
