@@ -34,7 +34,9 @@ class LatestEvents extends Component {
                 <ul className={styles.list}>
                   {upcomingEvents.map((edge, index) => (
                     <li className={styles.listItem} key={index}>
-                      <Calendar date={edge.node.start} />
+                      <div>
+                        <Calendar date={edge.node.start} />
+                      </div>
                       <h4 className={styles.eventHeading}>
                         {edge.node.summary}
                       </h4>

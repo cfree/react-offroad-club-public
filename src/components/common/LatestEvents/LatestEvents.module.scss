@@ -12,6 +12,12 @@
 
   @include breakpoint($bp-md) {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $space;
+  }
+
+  @include breakpoint($bp-lg) {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $space;
   }
@@ -22,10 +28,6 @@
   // padding: $space;
   display: flex;
   margin: 10px 0;
-
-  @include breakpoint($bp-md) {
-    display: flex;
-  }
 }
 
 .btn {
