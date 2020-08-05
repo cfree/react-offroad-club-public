@@ -6,7 +6,7 @@ import styles from './Menu.module.scss';
 // import { shortSiteTitle, membershipUrl } from '../../../config';
 
 const Menu = ({ siteTitle }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState();
   const handleMenuClick = useCallback(() => {
     setIsMenuOpen(!isMenuOpen);
   }, [isMenuOpen, setIsMenuOpen]);
