@@ -13,7 +13,7 @@
     "gatsby-plugin-feed": "^2.0.11",
     "gatsby-plugin-google-analytics": "^2.0.9",
     "gatsby-plugin-manifest": "^2.0.9",
-    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-offline": "^3.2.21",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.14",
@@ -33,10 +33,10 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "typeface-josefin-sans": "0.0.54",
-    "typeface-lato": "0.0.54",
-    "typeface-merriweather": "0.0.54",
-    "typeface-open-sans": "0.0.54"
+    "typeface-josefin-sans": "^0.0.54",
+    "typeface-lato": "^0.0.54",
+    "typeface-merriweather": "^0.0.54",
+    "typeface-open-sans": "^0.0.54"
   },
   "keywords": [
     "gatsby"
