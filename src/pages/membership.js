@@ -62,7 +62,7 @@ const MembershipPage = () => (
           consider your application (you must be present at the meeting).
         </li>
         <li>
-          Once the General Membership grants you Full Member status, pay the $20
+          Once the General Membership grants you Full Member status, pay the $40
           yearly dues and submit a ‘Rigbook’ photo of you and your rig.
         </li>
       </ol>
