@@ -31,18 +31,24 @@ class LatestEvents extends Component {
                 .splice(0, 9);
 
               return (
-                <ul className={styles.list}>
-                  {upcomingEvents.map((edge, index) => (
-                    <li className={styles.listItem} key={index}>
-                      <div>
-                        <Calendar date={edge.node.start} />
-                      </div>
-                      <h4 className={styles.eventHeading}>
-                        {edge.node.summary}
-                      </h4>
-                    </li>
-                  ))}
-                </ul>
+                <>
+                  {upcomingEvents.length > 0 ? (
+                    <ul className={styles.list}>
+                    {upcomingEvents.map((edge, index) => (
+                      <li className={styles.listItem} key={index}>
+                        <div>
+                          <Calendar date={edge.node.start} />
+                        </div>
+                        <h4 className={styles.eventHeading}>
+                          {edge.node.summary}
+                        </h4>
+                      </li>
+                    ))}
+                  </ul>
+                  ) : (
+                    <p>No events scheduled</p>
+                  )}
+                </>
               );
             }}
           />
