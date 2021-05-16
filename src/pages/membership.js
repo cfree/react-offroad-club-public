@@ -26,7 +26,7 @@ const MembershipPage = () => (
       <p>
         <strong>I'm not sure if I want to join</strong>. Guests are welcome!
         Join us for up to 3 runs before we ask that you apply for membership.{' '}
-        <a href="http://members.4-playersofcolorado.org/registration">
+        <a href="https://members.4-playersofcolorado.org/register">
           Create an account
         </a>{' '}
         to get started.
@@ -45,7 +45,7 @@ const MembershipPage = () => (
       <h4>Process</h4>
       <ol>
         <li>
-          <a href="http://members.4-playersofcolorado.org/registration">
+          <a href="https://members.4-playersofcolorado.org/register">
             Register for an account
           </a>
           .
@@ -90,7 +90,7 @@ const MembershipPage = () => (
           reports, meeting minutes, and newsletters.
         </li>
         <li>
-          Belonging to a club with 30+ years of history, stories and active
+          Belonging to a club with 35+ years of history, stories and active
           participation in our community.
         </li>
       </ul>
@@ -105,7 +105,7 @@ const MembershipPage = () => (
       <h4>Process</h4>
       <ol>
         <li>
-          <a href="http://members.4-playersofcolorado.org/registration">
+          <a href="https://members.4-playersofcolorado.org/register">
             Register for an account
           </a>
           .
@@ -137,7 +137,7 @@ const MembershipPage = () => (
           newsletters.
         </li>
         <li>
-          Belonging to a club with 30+ years of history, stories and active
+          Belonging to a club with 35+ years of history, stories and active
           participation in our community.
         </li>
       </ul>
@@ -145,7 +145,7 @@ const MembershipPage = () => (
       <hr />
 
       <div className={styles.createBtn}>
-        <Button href="http://members.4-playersofcolorado.org/registration">
+        <Button href="https://members.4-playersofcolorado.org/register">
           Create an Account
         </Button>
       </div>

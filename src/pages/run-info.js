@@ -142,7 +142,7 @@ const RunInfoPage = () => (
         <strong>No 4x4 Vehicle?</strong> That's okay! Our members commonly have
         space for ride-alongs and it’s a great way to be immersed in nature and
         meet some of the guys in the club.{' '}
-        <a href="http://members.4-playersofcolorado.org/registration">
+        <a href="https://members.4-playersofcolorado.org/registration">
           Sign-up for an account
         </a>
         .
@@ -151,7 +151,7 @@ const RunInfoPage = () => (
         <strong>Have a Rig?</strong> Let's go! Our Run Leaders are experienced
         off-roaders. It’s safer to hit the trails with a group. Pack a lunch
         and/or your dog and let’s get out there.{' '}
-        <a href="http://members.4-playersofcolorado.org/registration">
+        <a href="https://members.4-playersofcolorado.org/registration">
           Create an account
         </a>{' '}
         to get started.
