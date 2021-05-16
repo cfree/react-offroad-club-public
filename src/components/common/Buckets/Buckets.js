@@ -6,7 +6,7 @@ import Container from '../../utility/Container';
 const Buckets = () => (
   <div className={styles.Buckets}>
     <Container>
-      <h2>For Over 30 years, Our Mission Hasn't Changed</h2>
+      <h2>For Over 35 years, Our Mission Hasn't Changed</h2>
       <ul className={styles.list}>
         <li>
           <strong>Sport</strong>
