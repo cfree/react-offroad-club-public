@@ -38,7 +38,7 @@ const Menu = ({ siteTitle }) => {
           <Link to="/membership">Membership</Link>
         </li>
         <li>
-          <a href="http://members.4-playersofcolorado.org">Login</a>
+          <a href="https://members.4-playersofcolorado.org">Login</a>
         </li>
         <li>
           <Link to="/contact">Contact Us</Link>
@@ -69,7 +69,7 @@ const Menu = ({ siteTitle }) => {
           <Link to="/membership">Membership</Link>
         </li>
         <li>
-          <a href="http://members.4-playersofcolorado.org">Login</a>
+          <a href="https://members.4-playersofcolorado.org">Login</a>
         </li>
         <li>
           <Link to="/contact">Contact Us</Link>
