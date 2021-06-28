@@ -31,7 +31,7 @@
     "gatsby-transformer-sharp": "^2.1.8",
     "node-sass": "^4.11.0",
     "nuka-carousel": "^4.4.7",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.24.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -63,6 +63,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "peerDependencies": {
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.24.0"
   }
 }
