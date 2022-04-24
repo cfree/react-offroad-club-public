@@ -4,6 +4,11 @@
 .LatestEvents {
   @include darkSection('../../../../content/assets/tracks.jpg');
   color: white;
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 .list {
