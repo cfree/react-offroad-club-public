@@ -20,7 +20,7 @@ const Buckets = () => (
           Foster a respect for and commitment to preserving the environment.
         </li>
         <li>
-          <strong>Brotherhood</strong>
+          <strong>Fellowship</strong>
           <br />
           Provide social, educational, and recreational activities for our out
           and proud members.

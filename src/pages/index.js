@@ -20,7 +20,7 @@ const IndexPage = () => (
         <img className={styles.logo} src={logo} alt={`${fullSiteTitle} logo`} />
         Formed in 1986, the 4-Players of Colorado is a not-for-profit club that
         donates funds raised during the year to local organizations benefitting
-        the Colorado LGBTQ community. As a social organization for gay men, we
+        the Colorado LGBTQI+ community. As an LGBTQI+ social organization, we
         share an enjoyment for traveling backroads and off-road trails
         responsibly in four-wheel drive vehicles.
       </p>

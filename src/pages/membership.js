@@ -38,7 +38,7 @@ const MembershipPage = () => (
           Own or have access to a 4×4-capable vehicle with current license,
           registration, and insurance coverage.
         </li>
-        <li>Identify as a gay man.</li>
+        <li>Identify as a member of the LGBTQI+ community.</li>
         <li>Have a desire to explore off-road trails.</li>
         <li>Be 18 years of age or older.</li>
       </ul>

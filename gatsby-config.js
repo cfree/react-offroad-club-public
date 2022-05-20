@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `4-Players of Colorado`,
-    description: `A social organization for gay men where we share an enjoyment for traveling backroads and off-road trails responsibly in four-wheel drive vehicles`,
+    description: `An LGBTQI+ social organization where we share an enjoyment for traveling backroads and off-road trails responsibly in four-wheel drive vehicles`,
     author: `Craig Freeman`,
     siteUrl: `https://4-playersofcolorado.org`,
     social: {
@@ -87,5 +87,3 @@ module.exports = {
     'gatsby-plugin-offline',
   ],
 };
-
-
