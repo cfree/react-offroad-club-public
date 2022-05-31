@@ -60,7 +60,7 @@ const AboutPage = () => (
       </p>
       <h4>Camping</h4>
       <p>
-        It's a great feeling to share a campfire with other club member after a
+        It's a great feeling to share a campfire with other club members after a
         day on the trail. A fellowship that shares your enjoyment in the
         outdoors and 4x4ing is something to be experienced within our unique
         sub-culture of the LGBTQ community. Our campouts are selected each year
