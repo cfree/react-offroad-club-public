@@ -7,7 +7,7 @@ import Main from '../components/layout/Main';
 
 const RunInfoPage = () => (
   <Layout showSmallHeader={true} pageTitle="Run Info">
-    <SEO title="Events" />
+    <SEO title="Run Information" />
 
     <Main>
       <h2>General Run Information</h2>

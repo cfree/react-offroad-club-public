@@ -10,7 +10,7 @@ import memberImgRecent from '../../content/assets/recent-club.jpg';
 
 const AboutPage = () => (
   <Layout showSmallHeader={true} pageTitle="About Us">
-    <SEO title="Page two" />
+    <SEO title="About Us" />
 
     <Main>
       <h2>Meet the 4-Players of Colorado</h2>
