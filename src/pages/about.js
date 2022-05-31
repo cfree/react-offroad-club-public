@@ -60,17 +60,17 @@ const AboutPage = () => (
       </p>
       <h4>Camping</h4>
       <p>
-        It's a great feeling to share a campfire with other guys after a day on
-        the trail. A fellowship that shares your enjoyment in the outdoors and
-        4x4ing is something to be experienced within our unique sub-culture of
-        the LGBTQ community. Our campouts are selected each year to fall over
-        one of the major holiday weekends, with more added during the peak
-        high-elevation outdoor season. We typically visit Moab Utah near the end
-        of September for their Pride and a full weekend of fun. Campouts are
-        sometimes scheduled to join with a local gay RV group; many members of
-        the 4-Players belong to that group as well. Campouts with us typically
-        are tent-based and each person comes self-sufficient. We follow ‘Leave
-        No Trace’ rules.
+        It's a great feeling to share a campfire with other club member after a
+        day on the trail. A fellowship that shares your enjoyment in the
+        outdoors and 4x4ing is something to be experienced within our unique
+        sub-culture of the LGBTQ community. Our campouts are selected each year
+        to fall over one of the major holiday weekends, with more added during
+        the peak high-elevation outdoor season. We typically visit Moab Utah
+        near the end of September for their Pride and a full weekend of fun.
+        Campouts are sometimes scheduled to join with a local gay RV group; many
+        members of the 4-Players belong to that group as well. Campouts with us
+        typically are tent-based and each person comes self-sufficient. We
+        follow ‘Leave No Trace’ rules.
       </p>
 
       <hr />
