@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import { formatInTimeZone } from 'date-fns-tz';
 
 import styles from './LatestEvents.module.scss';
 import Container from '../../utility/Container';
@@ -44,12 +43,7 @@ const LatestEvents = () => {
                 {upcomingEvents.map(event => (
                   <li className={styles.listItem} key={event.id}>
                     <div>
-                      <Calendar
-                        date={formatInTimeZone(
-                          new Date(event.startTime),
-                          'America/Denver'
-                        )}
-                      />
+                      <Calendar date={event.startTime} />
                     </div>
                     <h4 className={styles.eventHeading}>
                       <a
