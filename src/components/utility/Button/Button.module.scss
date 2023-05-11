@@ -20,6 +20,10 @@
     background: $color-dark;
   }
 
+  &:disabled {
+    cursor: not-allowed;
+  }
+
   &Ghost {
     border: 3px solid $color-light;
     border-radius: 0;
@@ -38,6 +42,10 @@
     &:hover {
       color: $color-dark;
       background: $color-light;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
     }
   }
 }
