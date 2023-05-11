@@ -5,6 +5,7 @@ import { navigate } from 'gatsby';
 
 import styles from './ContactForm.module.scss';
 import Button from '../../utility/Button';
+import Captcha from '../Captcha';
 
 function ContactForm() {
   const [validRecaptcha, setValidRecaptcha] = useState(false);
@@ -43,7 +44,7 @@ function ContactForm() {
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded',
             },
-            body: this.encode({
+            body: encode({
               'form-name': 'contact',
               ...values,
             }),
@@ -61,60 +62,64 @@ function ContactForm() {
             });
         }}
       >
-        {({ isSubmitting, handleSubmit }, ...props) => (
-          <form
-            name="contact"
-            method="post"
-            action="/thanks"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
-            {...props}
-          >
-            <div className={styles.formFields}>
-              <Field
-                className={styles.field}
-                placeholder="Name"
-                type="name"
-                name="name"
-              />
-              <ErrorMessage
-                className={styles.error}
-                name="name"
-                component="div"
-              />
-              <Field
-                className={styles.field}
-                placeholder="Email"
-                type="email"
-                name="email"
-              />
-              <ErrorMessage
-                className={styles.error}
-                name="email"
-                component="div"
-              />
-              <Field
-                className={styles.field}
-                placeholder="Message"
-                type="message"
-                component="textarea"
-                name="message"
-              />
-              <ErrorMessage
-                className={styles.error}
-                name="message"
-                component="div"
-              />
-              <div className={styles.recaptcha}>
-                <Captcha onChange={handleCaptchaChange} />
+        {({ isSubmitting, handleSubmit }, ...props) => {
+          const isDisabled = !validRecaptcha || isSubmitting;
+
+          return (
+            <form
+              name="contact"
+              method="post"
+              action="/thanks"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              {...props}
+            >
+              <div className={styles.formFields}>
+                <Field
+                  className={styles.field}
+                  placeholder="Name"
+                  type="name"
+                  name="name"
+                />
+                <ErrorMessage
+                  className={styles.error}
+                  name="name"
+                  component="div"
+                />
+                <Field
+                  className={styles.field}
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                />
+                <ErrorMessage
+                  className={styles.error}
+                  name="email"
+                  component="div"
+                />
+                <Field
+                  className={styles.field}
+                  placeholder="Message"
+                  type="message"
+                  component="textarea"
+                  name="message"
+                />
+                <ErrorMessage
+                  className={styles.error}
+                  name="message"
+                  component="div"
+                />
+                <div className={styles.recaptcha}>
+                  <Captcha onChange={handleCaptchaChange} />
+                </div>
               </div>
-            </div>
-            <Button type="submit" disabled={isSubmitting}>
-              Send
-            </Button>
-          </form>
-        )}
+              <Button type="submit" disabled={isDisabled}>
+                Send
+              </Button>
+            </form>
+          );
+        }}
       </Formik>
     </div>
   );
