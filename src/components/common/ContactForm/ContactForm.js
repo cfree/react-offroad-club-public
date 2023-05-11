@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useCallback } from 'react';
 // import classnames from 'classnames';
 import { Formik, Field, ErrorMessage } from 'formik';
 import { navigate } from 'gatsby';
@@ -6,22 +6,33 @@ import { navigate } from 'gatsby';
 import styles from './ContactForm.module.scss';
 import Button from '../../utility/Button';
 
-class ContactForm extends Component {
-  encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+function ContactForm() {
+  const [validRecaptcha, setValidRecaptcha] = useState(false);
 
-  render() {
-    return <div className={styles.ContactForm}>
-      <Formik 
-        initialValues={{ name: '', email: '', message: '' }} 
+  const handleCaptchaChange = useCallback(
+    isValid => {
+      setValidRecaptcha(isValid);
+    },
+    [setValidRecaptcha]
+  );
+
+  const encode = useCallback(data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  }, []);
+
+  return (
+    <div className={styles.ContactForm}>
+      <Formik
+        initialValues={{ name: '', email: '', message: '' }}
         validate={values => {
           let errors = {};
           if (!values.email) {
             errors.email = 'Required';
-          } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+          } else if (
+            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+          ) {
             errors.email = 'Invalid email address';
           }
           return errors;
@@ -44,7 +55,8 @@ class ContactForm extends Component {
             .catch(() => {
               setSubmitting(false);
               setStatus({
-                msg: 'There was a problem submitting your message. Please try again later.',
+                msg:
+                  'There was a problem submitting your message. Please try again later.',
               });
             });
         }}
@@ -56,20 +68,47 @@ class ContactForm extends Component {
             action="/thanks"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit} 
+            onSubmit={handleSubmit}
             {...props}
           >
             <div className={styles.formFields}>
-              <Field className={styles.field} placeholder="Name" type="name" name="name" />
-              <ErrorMessage className={styles.error} name="name" component="div" />
-
-              <Field className={styles.field} placeholder="Email" type="email" name="email" />
-              <ErrorMessage className={styles.error} name="email" component="div" />
-
-              <Field className={styles.field} placeholder="Message" type="message" component="textarea" name="message" />
-              <ErrorMessage className={styles.error} name="message" component="div" />
-
-              {/* reCaptcha */}
+              <Field
+                className={styles.field}
+                placeholder="Name"
+                type="name"
+                name="name"
+              />
+              <ErrorMessage
+                className={styles.error}
+                name="name"
+                component="div"
+              />
+              <Field
+                className={styles.field}
+                placeholder="Email"
+                type="email"
+                name="email"
+              />
+              <ErrorMessage
+                className={styles.error}
+                name="email"
+                component="div"
+              />
+              <Field
+                className={styles.field}
+                placeholder="Message"
+                type="message"
+                component="textarea"
+                name="message"
+              />
+              <ErrorMessage
+                className={styles.error}
+                name="message"
+                component="div"
+              />
+              <div className={styles.recaptcha}>
+                <Captcha onChange={handleCaptchaChange} />
+              </div>
             </div>
             <Button type="submit" disabled={isSubmitting}>
               Send
@@ -77,8 +116,8 @@ class ContactForm extends Component {
           </form>
         )}
       </Formik>
-      </div>;
-  }
+    </div>
+  );
 }
 
 export default ContactForm;
