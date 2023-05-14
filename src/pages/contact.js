@@ -21,7 +21,8 @@ const ContactPage = () => (
           rel="noreferrer"
         >
           Charlie's Denver
-        </a>
+        </a>{' '}
+        (seasonally, see calendar for details)
       </p>
       <div className={styles.cols}>
         <ContactForm />

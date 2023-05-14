@@ -31,8 +31,9 @@ const LatestEvents = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Charlie's Denver (seasonally, check calendar below)
-          </a>
+            Charlie's Denver
+          </a>{' '}
+          (seasonally, check calendar below)
         </p>
         {loading ? (
           <>Loading...</>
