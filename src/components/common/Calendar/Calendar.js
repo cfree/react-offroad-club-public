@@ -7,7 +7,7 @@ import styles from './Calendar.module.scss';
 const Calendar = ({ date }) => (
   <div
     className={styles.Calendar}
-    title={formatInTimeZone(new Date(date), 'America/Denver', 'MM/dd/YYYY')}
+    title={formatInTimeZone(new Date(date), 'America/Denver', 'MM/dd/yyyy')}
   >
     <div className={styles.month}>
       {date && formatInTimeZone(new Date(date), 'America/Denver', 'MMM')}

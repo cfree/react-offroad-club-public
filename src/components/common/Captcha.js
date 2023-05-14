@@ -13,12 +13,16 @@ const Captcha = ({ onChange }) => {
   const recaptchaSiteKey = process.env.GATSBY_RECAPTCHA_SITE_KEY;
 
   return (
-    <ReCAPTCHA
-      sitekey={recaptchaSiteKey}
-      onChange={handleCaptchaChange}
-      onExpired={handleCaptchaExpire}
-      onErrored={handleCaptchaExpire}
-    />
+    <>
+      {recaptchaSiteKey && (
+        <ReCAPTCHA
+          sitekey={recaptchaSiteKey}
+          onChange={handleCaptchaChange}
+          onExpired={handleCaptchaExpire}
+          onErrored={handleCaptchaExpire}
+        />
+      )}
+    </>
   );
 };
 
