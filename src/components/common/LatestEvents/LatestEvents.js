@@ -25,15 +25,7 @@ const LatestEvents = () => {
         <h2 className={styles.heading}>Upcoming Events</h2>
         <p>
           Come visit us at our monthly meeting at 7pm on the second Monday of
-          each month at{' '}
-          <a
-            href="https://www.google.com/maps/dir//Charlie's+Denver,+900+E+Colfax+Ave,+Denver,+CO+80218/@39.7397694,-104.978392,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x876c792d2c23dbc9:0xb4e1b42dcd87972!2m2!1d-104.9762311!2d39.739667"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Charlie's Denver
-          </a>{' '}
-          (seasonally, check calendar below)
+          each month (seasonally, check calendar below for details)
         </p>
         {loading ? (
           <>Loading...</>
