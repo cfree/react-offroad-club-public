@@ -12,7 +12,11 @@ const ContactPage = () => (
     <SEO title="Contact" />
 
     <Main>
-      <h2>Send Us a Message</h2>
+      <h2>Our Address</h2>
+      PO Box 300001
+      <br />
+      Denver, CO 80203
+      <h2>Send Us A Message</h2>
       <p>
         Our monthly meetings are at 7pm on the second Monday of each month
         (seasonally, see calendar for details)
