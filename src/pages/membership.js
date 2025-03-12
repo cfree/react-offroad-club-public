@@ -54,7 +54,7 @@ const MembershipPage = () => (
           Sign-up and drive your rig on one or more of our published runs.
         </li>
         <li>
-          Attend one or more of our monthly meetings, held on the second Monday
+          Attend one or more of our monthly meetings, held on the second Tuesday
           of the month at 7pm.
         </li>
         <li>
@@ -111,7 +111,7 @@ const MembershipPage = () => (
           .
         </li>
         <li>
-          Attend one or more of our monthly meetings, held on the second Monday
+          Attend one or more of our monthly meetings, held on the second Tuesday
           of the month at 7pm.
         </li>
         <li>

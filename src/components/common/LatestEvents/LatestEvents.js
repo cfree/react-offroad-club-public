@@ -24,7 +24,7 @@ const LatestEvents = () => {
       <Container>
         <h2 className={styles.heading}>Upcoming Events</h2>
         <p>
-          Come visit us at our monthly meeting at 7pm on the second Monday of
+          Come visit us at our monthly meeting at 7pm on the second Tuesday of
           each month (seasonally, check calendar below for details)
         </p>
         {loading ? (

@@ -18,7 +18,7 @@ const ContactPage = () => (
       Denver, CO 80203
       <h2>Send Us A Message</h2>
       <p>
-        Our monthly meetings are at 7pm on the second Monday of each month
+        Our monthly meetings are at 7pm on the second Tuesday of each month
         (seasonally, see calendar for details)
       </p>
       <div className={styles.cols}>
